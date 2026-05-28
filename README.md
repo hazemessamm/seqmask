@@ -161,9 +161,10 @@ from seqmask import (
     BetaDistributionMasking,
     focus_positions_from_reference,
 )
+from seqmask import backend
 
-reference = torch.tensor([10, 20, 30, 40, 50])
-variants  = torch.tensor([
+reference = backend.to_tensor([10, 20, 30, 40, 50])
+variants  = backend.to_tensor([
     [10, 20, 30, 40, 50],   # unchanged
     [10, 99, 30, 99, 50],   # mutated at positions 1 and 3
 ])
