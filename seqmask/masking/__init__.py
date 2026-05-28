@@ -1,4 +1,4 @@
-from seqmask.masking._focus import focus_positions_from_reference
+from seqmask.masking.focus import focus_positions_from_reference
 from seqmask.masking.beta import BetaDistributionMasking
 from seqmask.masking.categorical import CategoricalMasking
 from seqmask.masking.diffusion import CosineDiffusionScheduler

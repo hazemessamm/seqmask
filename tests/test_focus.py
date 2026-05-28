@@ -20,9 +20,9 @@ from seqmask.masking import BetaDistributionMasking
 from seqmask.masking import CategoricalMasking
 from seqmask.masking import DiffusionMasking
 from seqmask.masking import focus_positions_from_reference
-from seqmask.masking._focus import coerce_focus_positions
-from seqmask.masking._focus import select_positions
-from seqmask.masking._focus import validate_focus_params
+from seqmask.masking.focus import coerce_focus_positions
+from seqmask.masking.focus import select_positions
+from seqmask.masking.focus import validate_focus_params
 
 
 class _FixedSampler:

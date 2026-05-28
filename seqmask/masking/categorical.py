@@ -5,9 +5,9 @@ import typing
 import numpy as np
 
 from seqmask import backend
-from seqmask.masking._focus import coerce_focus_positions
-from seqmask.masking._focus import select_positions
-from seqmask.masking._focus import validate_focus_params
+from seqmask.masking.focus import coerce_focus_positions
+from seqmask.masking.focus import select_positions
+from seqmask.masking.focus import validate_focus_params
 from seqmask.sampler import MLMProbabilitySampler
 from seqmask.utils import ensure_non_negative
 

@@ -6,9 +6,9 @@ import typing
 import numpy as np
 
 from seqmask import backend
-from seqmask.masking._focus import coerce_focus_positions
-from seqmask.masking._focus import select_positions
-from seqmask.masking._focus import validate_focus_params
+from seqmask.masking.focus import coerce_focus_positions
+from seqmask.masking.focus import select_positions
+from seqmask.masking.focus import validate_focus_params
 
 
 class DiffusionScheduler:
@@ -206,6 +206,8 @@ class DiffusionMasking:
             focus_strategy=self.focus_strategy,
             focus_strength=self.focus_strength,
         )
+
+        print(masked_indices.shape)
 
         labels[~masked_indices] = -100
         sequences[masked_indices] = self.mask_token_id
