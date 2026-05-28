@@ -25,13 +25,16 @@ With dev dependencies (pytest):
 pip install -e ".[dev]"
 ```
 
-Requires Python 3.9+. Depends on `numpy` and `torch`.
+Requires Python 3.9+. Depends on `numpy` and `torch` or `jax` (Whatever you are using).
 
 ## Quick start
 
 ```python
+import os
+os.environ["SEQMASK_BACKEND"] = "torch" # or `jax`
 import torch
 from seqmask import BetaDistributionMasking
+from seqmask import backend
 
 seqmask = BetaDistributionMasking(
     mlm_prob=0.15,
