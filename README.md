@@ -9,6 +9,8 @@ Built primarily for protein-sequence pretraining but tokenizer-agnostic:
 the caller supplies `mask_token_id`, `valid_token_ids`, and
 `special_token_ids`, so the same machinery works for any vocabulary.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20532337.svg)](https://doi.org/10.5281/zenodo.20532337)
+
 ## Installation
 
 From source:
@@ -241,8 +243,25 @@ seqmask/
 ## Testing
 
 ```bash
-pip install -e ".[dev]"
+pip install "seqmask[dev]"
 pytest
+```
+
+## Citation
+
+If you use this software in your research, please cite it as follows:
+
+```bibtex
+@software{alsamkary2026seqmask,
+  author       = {Hazem Alsamkary},
+  title        = {seqmask: r1.0.1},
+  month        = jun,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0.1},
+  doi          = {10.5281/zenodo.20532337},
+  url          = {https://doi.org/10.5281/zenodo.20532337}
+}
 ```
 
 ## License
