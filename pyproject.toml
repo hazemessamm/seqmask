@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "seqmask"
-version = "0.1.0"
+version = "1.0.0"
 description = "Composable MLM masking strategies with curriculum schedulers and diffusion support."
 readme = "README.md"
 requires-python = ">=3.9"
