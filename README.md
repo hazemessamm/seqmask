@@ -14,15 +14,13 @@ the caller supplies `mask_token_id`, `valid_token_ids`, and
 From source:
 
 ```bash
-git clone <repo-url>
-cd seqmask
-pip install -e .
+pip install seqmask
 ```
 
 With dev dependencies (pytest):
 
 ```bash
-pip install -e ".[dev]"
+pip install -e "seqmask[dev]"
 ```
 
 Requires Python 3.9+. Depends on `numpy` and `torch` or `jax` (Whatever you are using).
