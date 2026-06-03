@@ -252,6 +252,6 @@ class HybridSpanMasking:
             ]
 
         if input_is_not_np:
-            sequences = backend.from_numpy(sequences)
-            labels = backend.from_numpy(labels)
+            sequences = backend.to_tensor(sequences)
+            labels = backend.to_tensor(labels)
         return sequences, labels
