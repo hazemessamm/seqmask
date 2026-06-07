@@ -7,6 +7,7 @@ from seqmask.masking.diffusion import DiffusionScheduler
 from seqmask.masking.diffusion import LinearDiffusionScheduler
 from seqmask.masking.diffusion import SqrtDiffusionScheduler
 from seqmask.masking.hybrid_span import HybridSpanMasking
+from seqmask.masking.fixed import FixedMasking
 
 __all__ = [
     "BetaDistributionMasking",
@@ -15,6 +16,7 @@ __all__ = [
     "DiffusionMasking",
     "DiffusionScheduler",
     "HybridSpanMasking",
+    "FixedMasking",
     "LinearDiffusionScheduler",
     "SqrtDiffusionScheduler",
     "focus_positions_from_reference",

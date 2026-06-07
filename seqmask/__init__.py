@@ -16,3 +16,4 @@ from seqmask.scheduler import StagedLinearScheduler
 from seqmask.utils import create_default_mlm_weights
 from seqmask.utils import ensure_non_negative
 from seqmask.utils import seed_from_components
+from seqmask.masking import FixedMasking
